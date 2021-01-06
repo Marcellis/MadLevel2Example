@@ -42,6 +42,8 @@ class MainActivity : AppCompatActivity() {
     }
 
 
+
+    
     // addReminder method
     private fun addReminder(reminder: String) {
         if (reminder.isNotBlank()) {
