@@ -49,7 +49,7 @@ class MainActivity : AppCompatActivity() {
             reminderAdapter.notifyDataSetChanged()
             binding.etReminder.text?.clear()
         } else {
-            Snackbar.make(binding.etReminder, "You must fill in the input field!", Snackbar.LENGTH_SHORT).show()
+            Snackbar.make(binding.etReminder, getString (R.string.message), Snackbar.LENGTH_SHORT).show()
         }
     }
 
