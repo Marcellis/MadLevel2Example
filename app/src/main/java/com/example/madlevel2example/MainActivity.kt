@@ -10,13 +10,15 @@ import com.example.madlevel2example.databinding.ActivityMainBinding
 import com.google.android.material.snackbar.Snackbar
 
 
-private val reminders = arrayListOf<Reminder>()
-private val reminderAdapter = ReminderAdapter(reminders)
-// Don't forget to create a binding object as you did in previous assignments.
-private lateinit var binding: ActivityMainBinding
 
 
 class MainActivity : AppCompatActivity() {
+
+    private val reminders = arrayListOf<Reminder>()
+    private val reminderAdapter = ReminderAdapter(reminders)
+    // Don't forget to create a binding object as you did in previous assignments.
+    private lateinit var binding: ActivityMainBinding
+
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -40,8 +42,6 @@ class MainActivity : AppCompatActivity() {
 
         createItemTouchHelper().attachToRecyclerView(binding.rvReminders)
     }
-
-
 
     
     // addReminder method
